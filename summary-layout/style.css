@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-component{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-component-left{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    border-radius: 0 0 10% 10%;
+}
+.result{
+    opacity: 65%;
+    padding: 20px;
+}
+.result-points{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    min-width: 125px;
+    min-height: 125px;
+    border-radius: 50%;
+
+}
+.result-points > h3{
+    font-weight: 700;
+    font-size: 40px;
+}
+.result-points > p{
+    opacity: 50%;
+    font-size: 18px;
+}
+.conclusions{
+    text-align: center;
+    margin: 25px;
+}
+.conclusions >h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.conclusions > p{
+    font-size: 18px;
+    opacity: 50%;
+    max-width: 300px;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 30px;
+}
+
+.summary-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summary-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary-item-title{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-continue{
+    font-size: 20px;
+    border-radius: 20px;
+    padding-block: 20px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-continue:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.reaction{
+    color:  hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+.verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%,0.05);
+}
+@media ( min-width: 1440px) {
+    .main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-component{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.58);
+        box-shadow: 8px 8px 21px -6px rgba(66, 68, 90, 1);
+        border-radius: 20px;
+    }
+    .main-component-left{
+        width: auto;
+        border-radius: 20px;
+    }
+    .summary{
+        width: 20vw;
+    }
+}
